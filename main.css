@@ -92,6 +92,7 @@ nav {
 }
 
 .col {
+    text-decoration: none;
     transition: 1s;
     border-radius: 10px;
     padding: 20px;
@@ -130,6 +131,7 @@ nav {
     border-radius: 5px;
     transition: 0.2s;
     transform: scale(1, 1);
+    cursor: pointer;
 }
 
 .primary-button:hover {
