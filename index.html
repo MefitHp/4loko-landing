@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página de Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    Inicio.
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-store"></i>
+                    Productos.
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-users"></i>
+                    Acerca de nosotros.
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-location-arrow"></i>
+                    Contacto.
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <div class="banner-main">
+            <div class="banner-overlay">
+                <span>
+                    <h1>Nieves de 4Loko</h1>
+                    <p>Disfruta su sabor, y tus nuevos super poderes</p>
+                </span>
+            </div>
+        </div>
+        <section>
+            <h2 class="resposive-text text-bordered" style="color: white; padding-top: 20px; ">Conoce los nuevos miembros de la familia:</h2>
+            <div class="flex-grid">
+                <div class="col">
+                    <img src="./assets/camo-cluster.png" alt="">
+                    <span class="hack-center">
+                        <button class="primary-button btn-1 resposive-text">Pollo</button>
+                    </span>
+                </div>
+                <div class="col">
+                    <img src="./assets/bold-series.png" alt="">
+                    <span class="hack-center">
+                        <button class="primary-button btn-1 resposive-text">Pollo</button>
+                    </span>
+                </div>
+                <div class="col">
+                    <img src="./assets/bartender-series.png" alt="">
+                    <span class="hack-center">
+                        <button class="primary-button btn-1 resposive-text">Polla</button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" style="background-color: black">
+            <span class="hack-center" style="padding-top: 20px;">
+                <h4 style="color: white;">4Loko Premium Malt Beverages,
+                    <span id="year"></span>
+                </h4>
+                <p style="color: white;">Sold by Phusion Projects of Chicago, Illinois, United States.</p>
+            </span>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
