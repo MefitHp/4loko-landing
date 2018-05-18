@@ -9,11 +9,8 @@ nav {
     height: 60px;
     background-color: black;
     position: fixed;
-    /* Set the navbar to fixed position */
     top: 0;
-    /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
 }
 
 .navbar a {
@@ -39,12 +36,22 @@ nav {
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(85vh - 60px);
     margin-top: 60px;
     background-color: #f1c40f;
 }
 
 .banner-main {
-    background-image: url('./assets/main-banner.jpg');
+    background-image: url('../assets/main-banner.jpg');
+}
+
+.banner-productos {
+    background-image: url('../assets/productos.jpg')
+}
+
+.banner {
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -75,6 +82,7 @@ nav {
 
 .text-bordered {
     text-shadow: 0 0 3px black;
+    color: white;
 }
 
 .flex-grid {
@@ -85,17 +93,18 @@ nav {
 
 .col {
     width: 32%;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .flex-grid {
     margin: 0 0 20px 0;
 }
 
-.col {
-    text-decoration: none;
-    transition: 1s;
-    border-radius: 10px;
-    padding: 20px;
+.grow {
+    display: inline-block;
 }
 
 .col:hover {
@@ -112,14 +121,41 @@ nav {
     height: auto;
 }
 
-@media (max-width: 400px) {
+.responsive-img {
+    width: 25%;
+    height: auto;
+}
+
+@media (max-width: 500px) {
     .flex-grid {
-        display: block;
+        display: flex;
+        flex-flow: column;
     }
     .col {
         width: 100%;
         margin: 0 0 10px 0;
+        background-color: rgba(0, 0, 0, .2);
+        height: 100%
     }
+    .col-two {
+        min-width: 100%;
+        margin: 0 0 5px 0;
+        background-color: rgba(0, 0, 0, .2);
+        height: 95%;
+    }
+    .flex-top {
+        order: 1;
+    }
+    .flex-bot {
+        order: 2;
+    }
+}
+
+.flex-top,
+.flex-bot {
+    text-align: center;
+    margin: auto;
+    width: 100%;
 }
 
 .primary-button {
@@ -153,5 +189,15 @@ nav {
 
 .footer {
     width: 100%;
-    height: 80px;
+}
+
+/* Productos */
+
+.col-two {
+    width: 49%;
+    text-decoration: none;
+    transition: 1s;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
 }

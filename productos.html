@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Productos.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    Inicio.
+                </a>
+            </li>
+            <li>
+                <a href="productos.html">
+                    <i class="fas fa-store"></i>
+                    Productos.
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-users"></i>
+                    Acerca de nosotros.
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-location-arrow"></i>
+                    Contacto.
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <div class="banner banner-productos">
+            <div class="banner-overlay">
+                <span class="hack-center responsive-text">
+                    <h1>Nuestros Productos</h1>
+                </span>
+            </div>
+        </div>
+        <br>
+        <section class="text-bordered">
+            <div class="flex-grid" id="gold">
+                <div class="col-two flex-top">
+                    <span class="hack-center">
+                        <img src="/assets/gold.png" class="responsive-img" alt="">
+                    </span>
+                </div>
+                <div class="col-two flex-bot">
+                    <h2 class="responsive-text">
+                        GOLD
+                    </h2>
+                    <h3 class="responsive-text">12% ABV</h3>
+                    <p>Sabe a Oro. No podemos decir más acerca de esto.</p>
+                </div>
+            </div>
+            <div class="flex-grid" id="blaze">
+                <div class="col-two flex-bot">
+                    <h2 class="responsive-text">
+                        Blaze
+                    </h2>
+                    <h3 class="responsive-text">14% ABV</h3>
+                    <p>Una noche en llamas comienza en el momento en que abres una bebida como Blaze. Es el tipo de bebida que
+                        te recuerda que las posibilidades de la noche son realmente ilimitadas. Usted podría terminar su
+                        noche en un jacuzzi o en un país diferente.</p>
+                </div>
+                <div class="col-two flex-top">
+                    <span class="hack-center">
+                        <img src="/assets/blaze.png" class="responsive-img" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="flex-grid" id="bartender">
+                <div class="col-two flex-top">
+                    <span class="hack-center">
+                        <img src="/assets/purplehooter.png" class="responsive-img" alt="">
+                    </span>
+                </div>
+                <div class="col-two flex-bot">
+                    <h2 class="responsive-text">
+                        Purple Hooter
+                    </h2>
+                    <h3 class="responsive-text">10% ABV</h3>
+                    <p>Purple Hooter crea un equilibrio perfecto entre audacia y relajación. Es la bebida equivalente a la relación
+                        perfecta.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer" style="background-color: black">
+        <span class="hack-center" style="padding-top: 2vh; padding-bottom: 2vh">
+            <h4 style="color: white;">4Loko Premium Malt Beverages,
+                <span id="year"></span>
+            </h4>
+            <p style="color: white;">Sold by Phusion Projects of Chicago, Illinois, United States.</p>
+        </span>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
