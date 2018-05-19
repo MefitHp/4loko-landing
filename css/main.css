@@ -43,6 +43,10 @@ nav {
     background-color: #f1c40f;
 }
 
+.banner-about {
+    background-image: url('../assets/Aboutus.jpg')
+}
+
 .banner-main {
     background-image: url('../assets/main-banner.jpg');
 }
@@ -140,7 +144,6 @@ nav {
     .col-two {
         min-width: 100%;
         margin: 0 0 5px 0;
-        background-color: rgba(0, 0, 0, .2);
         height: 95%;
     }
     .flex-top {
@@ -198,6 +201,11 @@ nav {
     text-decoration: none;
     transition: 1s;
     padding: 20px;
-    background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
+}
+
+.product-block {
+    margin: 3%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .2)
 }
